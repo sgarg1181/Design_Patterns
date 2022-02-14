@@ -31,12 +31,13 @@ class Vehicle {
     private int wheel;
     
     private int airbags;
-    
+
+    // Required-Mandatory arguments
     public VehicleBuilder(String engine, int wheel) {
       this.engine = engine;
       this.wheel = wheel;
     }
-    
+    // Optional Argument
     public VehicleBuilder setAirbags(int airbags) {
       this.airbags = airbags;
       return this;
