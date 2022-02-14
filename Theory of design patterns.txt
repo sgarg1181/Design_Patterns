@@ -1,0 +1,61 @@
+1. Singleton Design Pattern:
+	Creational design pattern.
+	only one private static instance exist in the class that can be fetched with the help of a static method.
+
+2. Factory Design Pattern :
+	Creational design pattern.
+	We will have a factory that is resposible to initialize and provide instance of subclasses.
+	In case there exist super class wih multiple sub classes then to tackle the issue of inilializing and maintaining instance of sub classes we use this patter.
+	Think : what if name/ of sub class changes later on? how many place we need to change that? also based on th eproperty we can ask for which subclass object to be initiaized? 
+
+3. Builder Design Pattern :
+	Used when we have too many arguments to send in constructor and it is hard to maintain the order.
+	When we don't want to send all parameter in object initialization.
+	We need to send null in place fo thos optional arguments.
+	
+	No Need to maintain the order of arguments passed while creating the object it will handle itself.
+	build() method return us the main object finally.
+	if vehical class can take many arguments thne after this the vehical class with have private constructor nad vehical builder will have public contructor.
+	put required parameters of the vehical class in the contructor of vehical builder rest param can be set/get with the help of properties.
+
+4. Prototype Design Pattern :
+	Creational Design pattern.
+	When we want to avoid the multiple creation of same instance. instead we can clone the object and modify as per need.
+	Object we try to prototype should implement clonable interface. then we can modify the clone method.
+
+5. Proxy Design pattern :
+	Structural Design Pattern.(Improve the structure of java code)
+	Used when we want to control access. i.e delete in database should be for admin users only.
+	let's have a class with executer interface. we put a proxy class to filter executer method.
+
+6. Facade Design pattern
+	Structural Design Pattern.(Improve the structure of java code)
+	Used when there are multiple interfaces for similar ind of jobs then we can add a facade interface or routing interface which provide better interface to these interfaces
+
+7. Adapter Design Pattern
+	Structural Design Pattern.
+	When Objects offer same feature but has different interfaces. i.e charging adapter / USB to adapter
+	Allows existing classes to be used with others without modifying.
+	e.g. WebDriverAdapter
+
+8. Bridge Design Pattern
+	Structural Design Pattern.
+	Used when we have heirarchies in both interfaces as well as implementations and we want to hide implementation from client.
+	It decouple abstraction from it's implementation
+	e.g TV and Remote implementation system
+
+9. Observer Design Pattern
+	Behavioral Design patter. Whenever there is change in behavior notify me.
+	For Notification Systems. eng delivery updates to selleer/user/warehouse
+	Whenever there is a change in the system just update the TOPIC and then it is responsibility of system to notify the observers.
+	Create observsers/ register observers.
+	subscribe to topic/unsubscribe to topic
+	TOPIC=== kafka topic
+	Math func : register observer / unsusbscribe observer / notify observer
+	Example : 
+	1. Delivery notify system
+	2. Click of button. whenever we press it all onClick() listerner will be notified.
+
+
+	
+	
